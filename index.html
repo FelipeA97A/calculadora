@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+		<div class="calculadora">
+			<div class="resultados">
+				<div class="historial" id="historial"></div>
+				<p class="resultado" id="resultado"></p>
+			</div>
+			<div class="botones">
+				<table>
+					<tr>
+						<td>
+							<p class="btn" onclick="escribirNumero(7)">7</p>
+						</td>
+						<td>
+							<p class="btn" onclick="escribirNumero(8)">8</p>
+						</td>
+						<td>
+							<p class="btn" onclick="escribirNumero(9)">9</p>
+						</td>
+						<td>
+							<p class="btn operador" onclick="operacion('/')">÷</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="btn" onclick="escribirNumero(4)">4</p>
+						</td>
+						<td>
+							<p class="btn" onclick="escribirNumero(5)">5</p>
+						</td>
+						<td>
+							<p class="btn" onclick="escribirNumero(6)">6</p>
+						</td>
+						<td>
+							<p class="btn operador" onclick="operacion('*')">X</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="btn" onclick="escribirNumero(1)">1</p>
+						</td>
+						<td>
+							<p class="btn" onclick="escribirNumero(2)">2</p>
+						</td>
+						<td>
+							<p class="btn" onclick="escribirNumero(3)">3</p>
+						</td>
+						<td>
+							<p class="btn operador" onclick="operacion('-')">-</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="btn funcion" onclick="del()">DEL</p>
+						</td>
+						<td>
+							<p class="btn" onclick="escribirNumero(0)">0</p>
+						</td>
+						<td>
+							<p class="btn funcion" onclick="realizarOperacion()">=</p>
+						</td>
+						<td>
+							<p class="btn operador" onclick="operacion('+')">+</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<script type="text/javascript" src="js/script.js"></script>
+	</footer>
+</html>
